@@ -70,20 +70,14 @@ ol {
   align-items: flex-start;
 }
 
-@-moz-scrollbars-none {
-  .content__list {
-    position: relative;
-    height: 298px;
-    min-width: 399px;   
-    overflow: hidden;  /* Отдельно прописал для firefox правила, у меня скролл пропал */
-  }
-}
+
 
 .content__list {
   position: relative;
   height: 298px;
   min-width: 399px;   /* Задал минимальную ширину (по ширине в макете). При загрузке теперь все нормально, вроде... :D */
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .content__details {
